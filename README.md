@@ -36,7 +36,6 @@ Line233: batch_size = 2
 
 ```python
 Line49: Batch_size = 2
-Line119: 改为 remainder = poses_array.shape[0]%Batch_size
 ```
 
 ## 用于训练和预测的数据
