@@ -116,7 +116,7 @@ class Data:
         trans_vel_array = trans_vel_array.reshape((-1, 3, trans_vel_array.shape[-1]))
         
         #还得去掉最后几帧
-        remainder = poses_array.shape[0]%2
+        remainder = poses_array.shape[0]%Batch_size
         poses_array = np.delete(poses_array, range(poses_array.shape[0] - remainder, poses_array.shape[0]),axis=0)
         trans_array = np.delete(trans_array, range(poses_array.shape[0] - remainder, poses_array.shape[0]), axis=0)
         trans_vel_array = np.delete(trans_vel_array, range(poses_array.shape[0] - remainder, poses_array.shape[0]), axis=0)
