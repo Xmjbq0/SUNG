@@ -64,7 +64,7 @@ Line388: loss = L_inertia + L_strain + L_bend + L_gravity + L_collision
 
 则在`train.py`
 
-```
+```python
 Line388: loss = L_inertia + L_strain + L_bend_New + L_gravity + L_collision
 ```
 
